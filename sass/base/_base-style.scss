@@ -1,0 +1,37 @@
+body {
+  font-size: 14px;
+  font-family: $primary-font, sans-serif;
+  letter-spacing: 0.03em;
+  color: $text-primary;
+  background-color: $white-color;
+}
+
+a {
+  transition: color $transition, background-color $transition;
+}
+
+button {
+  font-family: inherit;
+
+  transition: color $transition, background-color $transition;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.padding-bottom {
+  padding-bottom: 94px;
+}

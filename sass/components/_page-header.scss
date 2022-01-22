@@ -1,0 +1,119 @@
+.header {
+  background: $white-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.header-border {
+  display: flex;
+  align-items: baseline;
+}
+
+/* =========== WebStudio =========== */
+
+.header-logo__link {
+  padding: 24px 0px 25px 0px;
+  margin-right: 93px;
+  display: block;
+
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header-logo__link--theme {
+  color: $theme-color;
+}
+
+.header-logo__link--black {
+  color: $black-color;
+}
+
+/* =========== Navigator=========== */
+
+.navigator {
+  display: flex;
+}
+
+.navigator__link {
+  position: relative;
+
+  display: block;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-primary;
+
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
+}
+
+.navigator__link--current {
+  color: $theme-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    height: 4px;
+    width: 100%;
+
+    background-color: $theme-color;
+    border-radius: 2px;
+  }
+}
+
+.navigator__iteam:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* =========== Contacts =========== */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__contact {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  margin-left: 30px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-secondary;
+
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
+
+  &:hover .contacts__webpost,
+  &:focus .contacts__webpost,
+  &:hover .contacts__smartphone,
+  &:focus .contacts__smartphone {
+    fill: $theme-color;
+  }
+}
+
+.contacts__webpost {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $text-secondary;
+}
+
+.contacts__smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $text-secondary;
+}

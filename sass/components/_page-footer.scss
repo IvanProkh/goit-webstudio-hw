@@ -1,0 +1,193 @@
+.page-footer {
+  display: flex;
+  padding: 60px 0px;
+  background: $bg-first;
+}
+
+.footer-box {
+  display: flex;
+}
+
+.contact-box {
+  margin-right: 70px;
+}
+
+/* =========== Footer WebStudio =========== */
+
+.footer-logo {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: $secondary-font;
+}
+
+.footer-logo--theme-color {
+  color: $theme-color;
+}
+
+.footer-logo--white-color {
+  color: $white-color;
+}
+
+/* =========== Address =========== */
+
+.footer-address__google-address {
+  padding: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+}
+
+.footer-address__element {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-secondary;
+
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address__footer-contact {
+  padding: 0;
+
+  font-style: normal;
+  line-height: 1.71;
+  color: $text-third;
+}
+
+/* =========== join section =========== */
+
+.join-block {
+  margin-right: 93px;
+}
+
+.join-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons__footer-icon {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transition;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $theme-color;
+  }
+}
+
+.social-icons__footer-social {
+  display: block;
+  padding: 12px;
+
+  fill: $white-color;
+}
+
+/* =========== Subscribe section =========== */
+
+.subscribe-box {
+  margin-left: auto;
+}
+
+.footer-form__subscribe-title {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer-form__subscribe-mail {
+  display: flex;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__input {
+  margin-right: 12px;
+  padding: 14px 0px 14px 15px;
+  min-width: 358px;
+  max-height: 50px;
+
+  cursor: pointer;
+  background: $bg-first;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $white-color;
+
+  transition: border-color $transition;
+
+  &:focus {
+    border: 1px solid $theme-color;
+    outline: none;
+  }
+}
+
+.footer-form__button {
+  display: flex;
+  padding: 10px 30px;
+  min-width: 200px;
+  max-height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  color: $white-color;
+  background: $theme-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+
+.footer-form__icon-send {
+  margin-left: 10px;
+  margin-top: 3px;
+
+  fill: $white-color;
+}

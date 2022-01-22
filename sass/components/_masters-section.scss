@@ -1,0 +1,94 @@
+.masters-section {
+  padding-top: 94px;
+  background: $bg-third;
+}
+
+.masters-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.masters-list {
+  display: flex;
+}
+
+.masters-list__pfoto {
+  margin-bottom: 30px;
+}
+
+.masters-list__master {
+  padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $white-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.masters-list__name {
+  margin-bottom: 10px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.masters-list__profession {
+  margin-bottom: 0px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.18;
+  color: $text-secondary;
+}
+
+.master-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.master-icons__social-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.master-icons__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  margin-top: 16px;
+
+  border-radius: 50%;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $theme-color;
+  }
+}
+
+.master-icons__social {
+  display: block;
+  padding: 12px;
+
+  fill: $element-color;
+  transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    fill: $white-color;
+  }
+}

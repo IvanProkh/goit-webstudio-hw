@@ -1,0 +1,46 @@
+.clients-div {
+  padding-top: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16 32;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $element-color;
+  border-radius: 4px;
+  transition: border-color $transition;
+
+  &:hover,
+  &:focus {
+    border-color: $theme-color;
+  }
+
+  &:hover .clients__logo,
+  &:focus .clients__logo {
+    fill: $theme-color;
+  }
+}
+
+.clients__profile:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__logo {
+  fill: $element-color;
+  transition: fill $transition;
+}
