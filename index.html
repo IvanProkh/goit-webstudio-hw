@@ -21,34 +21,59 @@
     <!-- Шапка сайта -->
     <header class="header">
         <div class="header-border container">
-            <div class="header-logo">
-                <a class="header-logo__link" href="./index.html">
-                    <span class="header-logo__link--theme">Web</span><span class="header-logo__link--black">Studio</span>
-                </a>
+
+            
+                <div class="header-logo">
+                    <a class="header-logo__link" href="./index.html">
+                        <span class="header-logo__link--theme">Web</span><span class="header-logo__link--black">Studio</span>
+                    </a>
+                </div>
+
+            <!-- <div class="menu-mobile"> -->
+
+                <button class="menu-button" type="button">
+                    <svg 
+                        class="menu-button__icon" 
+                        width="40" 
+                        height="40" 
+                        aria-label="Переключатель мобильного меню">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                </button>
+
+                <ul class="navigator">
+                    <li class="navigator__iteam"><a class="navigator__link navigator__link--current" href="./index.html">Студия</a></li>
+                    <li class="navigator__iteam"><a class="navigator__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigator__iteam"><a class="navigator__link" href="#">Контакты</a></li>
+                </ul>
+                <ul class="contacts">
+                    <li class="contacts__iteam">
+                        <a class="contacts__contact" href="mailto:info@devstudio.com">
+                            <svg class="contacts__webpost">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__iteam">
+                        <a class="contacts__contact" href="tel:+380961111111">
+                            <svg class="contacts__smartphone">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social-list">
+                    <li class="social-list__item"><a href="#">Instagram</a></li>
+                    <li class="social-list__item"><a href="#">Twitter</a></li>
+                    <li class="social-list__item"><a href="#">Facebook</a></li>
+                    <li class="social-list__item"><a href="#">LinkedIn</a></li>
+                </ul>
+
             </div>
-            <ul class="navigator">
-                <li class="navigator__iteam"><a class="navigator__link navigator__link--current" href="./index.html">Студия</a></li>
-                <li class="navigator__iteam"><a class="navigator__link" href="./portfolio.html">Портфолио</a></li>
-                <li class="navigator__iteam"><a class="navigator__link" href="#">Контакты</a></li>
-            </ul>
-            <ul class="contacts">
-                <li class="contacts__iteam">
-                    <a class="contacts__contact" href="mailto:info@devstudio.com">
-                        <svg class="contacts__webpost">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__iteam">
-                    <a class="contacts__contact" href="tel:+380961111111">
-                        <svg class="contacts__smartphone">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
 
@@ -467,20 +492,7 @@
         </div>
     </div>
 
-    <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form'),
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) => 
-                        console.log('${name}: ${value}'),
-                    );
-                });
-        })();
-    </script>
-
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,4 +1,8 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding-top: 200px;
   padding-bottom: 200px;
   background: $hero-color;
@@ -6,11 +10,16 @@
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
     url(../images/hero/hero-img.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 
-  .hero-box {
-    text-align: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+      url('../images/hero/hero-img.jpg');
   }
+}
+
+.hero-box {
+  text-align: center;
 }
 
 .hero-box__headline {
@@ -19,14 +28,15 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white-color;
+
+  // text-align: center;
 }
 
 .hero-box__button {
-  display: inline-block;
+  // display: inline-block;
   padding: 10px 32px;
 
   font-weight: bold;
