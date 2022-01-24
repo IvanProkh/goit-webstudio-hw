@@ -34,6 +34,24 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .padding-bottom {
   padding-bottom: 94px;
 }
@@ -86,6 +104,24 @@ ul {
 @media screen and (max-width: 767px) {
   .header-border {
     display: block;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header-border {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-border {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-border {
+    width: 1200px;
   }
 }
 
@@ -291,16 +327,6 @@ ul {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -320,9 +346,21 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .hero {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 100%;
   }
 }
 
@@ -406,6 +444,12 @@ ul {
 }
 
 /* =========== What are we doing. products-box =========== */
+@media screen and (max-width: 767px) {
+  .products-box {
+    display: none;
+  }
+}
+
 .products-title {
   margin-bottom: 50px;
   font-weight: 700;

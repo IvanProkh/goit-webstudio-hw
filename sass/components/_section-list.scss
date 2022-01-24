@@ -49,6 +49,12 @@
 
 /* =========== What are we doing. products-box =========== */
 
+.products-box {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .products-title {
   margin-bottom: 50px;
 
