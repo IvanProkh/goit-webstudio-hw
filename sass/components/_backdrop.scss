@@ -33,6 +33,11 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition, box-shadow $transition, opacity $transition;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .is-hidden .modal {
@@ -173,6 +178,11 @@
   letter-spacing: 0.03em;
 
   color: $text-secondary;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .form-agreement__checkbox {
@@ -215,6 +225,11 @@
 
   cursor: pointer;
   fill: $black-color;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0;
+    margin-right: 8px;
+  }
 }
 
 .form-agreement__icon-check {
@@ -226,6 +241,11 @@
   fill: $white-color;
   background-color: $theme-color;
   border-radius: 2px;
+
+  @media screen and (max-width: 1199px) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .form-send {
