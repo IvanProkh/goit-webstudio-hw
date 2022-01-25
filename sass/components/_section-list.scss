@@ -2,6 +2,10 @@
 
 .section-list {
   padding-top: 94px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 .title-seo {
@@ -17,6 +21,8 @@
 
   @media screen and (max-width: 767px) {
     display: block;
+    margin: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -26,6 +32,11 @@
 
 .group-features__element {
   margin: 15px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .group-features__label {
@@ -35,6 +46,10 @@
   line-height: 1.14;
 
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .group-features__text {
@@ -43,6 +58,11 @@
 
   line-height: 1.71;
   color: $text-secondary;
+
+  @media screen and (max-width: 767px) {
+    // text-align: center;
+    width: 100%;
+  }
 }
 
 .group-features__icon {
@@ -54,6 +74,11 @@
   background-color: $bg-third;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: block;
+  }
 }
 
 /* =========== What are we doing. products-box =========== */
@@ -61,6 +86,7 @@
 .products-box {
   @media screen and (max-width: 767px) {
     display: none;
+    padding-bottom: 0;
   }
 }
 

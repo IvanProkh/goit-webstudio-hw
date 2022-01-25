@@ -1,5 +1,9 @@
 .clients-div {
   padding-top: 94px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 .clients-title {
@@ -8,16 +12,36 @@
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients {
   display: flex;
+  margin: -15px;
+
+  // flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    width: calc(100% / 2);
+    flex-wrap: wrap;
+  }
+}
+
+.clients__profile {
+  margin: 15px;
+
+  @media screen and (max-width: 767px) {
+    // width: calc(100% / 2);
+  }
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 16 32;
   width: 170px;
   height: 92px;
@@ -34,11 +58,15 @@
   &:focus .clients__logo {
     fill: $theme-color;
   }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
-.clients__profile:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients__profile:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients__logo {
   fill: $element-color;
