@@ -11,6 +11,12 @@
 
   @media screen and (max-width: 767px) {
     display: block;
+
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+
+    // background-color: $white-color;
   }
 
   @media screen and (min-width: 480px) {
@@ -28,7 +34,22 @@
 
 /* =========== menu-button =========== */
 
+// .menu-mobile {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+
+//   background-color: $white-color;
+
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
+
 .menu-button {
+  padding: 0;
+  border: 0;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -76,6 +97,12 @@
 
   @media screen and (max-width: 767px) {
     display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: $white-color;
   }
 }
 
@@ -139,6 +166,13 @@
 
   @media screen and (max-width: 767px) {
     display: block;
+
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+
+    background-color: $white-color;
   }
 }
 
@@ -152,6 +186,10 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-secondary;
+
+  // для планшета
+  //   font-size: 12px;
+  // line-height: 14px;
 
   &:hover,
   &:focus {
