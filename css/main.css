@@ -333,16 +333,30 @@ ul {
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 0;
+  height: 400px;
   background: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/hero/hero-img.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/hero/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -382,6 +396,14 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-box__headline {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+  }
 }
 
 .hero-box__button {
@@ -724,17 +746,12 @@ ul {
 
 @media screen and (max-width: 767px) {
   .clients {
-    width: calc(100% / 2);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
 .clients__profile {
-  margin: 15px;
-}
-
-.clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -744,8 +761,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 15px;
   padding: 16 32;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -753,18 +770,20 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__profile:hover, .clients__profile:focus {
   border-color: #2196f3;
 }
 
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
+.clients__profile:hover .clients__logo,
+.clients__profile:focus .clients__logo {
   fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
-  .clients__link {
-    width: 100%;
+  .clients__profile {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 210px;
   }
 }
 
