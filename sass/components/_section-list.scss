@@ -13,10 +13,19 @@
 
 .group-features {
   display: flex;
+  margin: -15px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
-.group-features__element:not(:last-child) {
-  margin-right: 30px;
+// .group-features__element:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.group-features__element {
+  margin: 15px;
 }
 
 .group-features__label {
