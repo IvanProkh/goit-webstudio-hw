@@ -29,18 +29,21 @@
                     </a>
                 </div>
 
-                <!-- <div class="menu-mobile"> -->
-
-                <button class="menu-button" type="button">
+                <button class="menu-button is-open" type="button" data-menu-button>
                     <svg 
                         class="menu-button__icon" 
                         width="40" 
                         height="40" 
-                        aria-label="Переключатель мобильного меню">
-                        <use href="./images/icons.svg#icon-menu_burger"></use>
-                        <use href="./images/icons.svg#icon-close_burger"></use>
+                        aria-expanded="false"
+                        aria-controls="menu-container"
+                        aria-label="Переключатель мобильного меню"
+                        >
+                        <use class="menu-button__menu-burger" href="./images/icons.svg#menu-burger"></use>
+                        <use class="menu-button__cross-burger" href="./images/icons.svg#cross-burger"></use>
                     </svg>
                 </button>
+
+            <div class="menu-container" id="menu-container" data-menu>
 
                 <ul class="navigator">
                     <li class="navigator__iteam"><a class="navigator__link navigator__link--current" href="./index.html">Студия</a></li>
