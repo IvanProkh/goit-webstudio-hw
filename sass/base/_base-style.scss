@@ -9,19 +9,9 @@ body {
   background-color: $white-color;
 }
 
-// @media screen and (max-width: 480px) {
-//   width: 480px;
-// }
-
-// @media screen and (max-width: 768px) {
-//   align-items: center;
-//   width: 768px;
-// }
-
-// @media screen and (max-width: 1200px) {
-//   align-items: center;
-//   width: 1200px;
-// }
+body.modal-open {
+  overflow: hidden;
+}
 
 a {
   transition: color $transition, background-color $transition;
