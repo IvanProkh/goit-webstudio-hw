@@ -106,7 +106,7 @@
 }
 
 .join-title {
-  margin-top: 12px;
+  margin-top: 60px;
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -115,8 +115,8 @@
   text-transform: uppercase;
   color: $white-color;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
   }
 }
 
@@ -171,8 +171,7 @@
 }
 
 .footer-form__subscribe-mail {
-  display: flex;
-
+  display: block;
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -181,8 +180,8 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -191,6 +190,7 @@
   padding: 14px 0px 14px 15px;
   min-width: 358px;
   max-height: 50px;
+  width: 100%;
 
   cursor: pointer;
   background: $bg-first;
@@ -233,8 +233,8 @@
   border: 0;
 
   @media screen and (max-width: 767px) {
-    display: inline-flex;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

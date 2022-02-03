@@ -8,31 +8,9 @@
 .header-border {
   display: flex;
   align-items: baseline;
-
-  // @media screen and (max-width: 767px) {
-  //   display: flex;
-
-  //   // position: absolute;
-  //   // top: 0;
-  //   // left: 0;
-
-  //   // background-color: $white-color;
-  // }
-
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;
-  // }
 }
 
-/* =========== menu-button =========== */
+/* =========== menu-burger =========== */
 
 .menu-container {
   display: flex;
@@ -60,6 +38,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -92,7 +72,7 @@
 /* =========== WebStudio =========== */
 
 .header-logo__link {
-  margin-right: auto;
+  // margin-right: auto;
   padding: 16px 0px;
   display: block;
 
