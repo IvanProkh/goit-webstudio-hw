@@ -97,12 +97,12 @@ ul {
 }
 
 .header {
-  position: relative;
   background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
 .header-border {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,16 +117,15 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 48px 40px;
   background-color: #ffffff;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
   }
   .menu-container.is-open {
@@ -157,6 +156,7 @@ ul {
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 2;
 }
 
 .menu-button__icon:hover, .menu-button__icon:focus {
@@ -177,8 +177,8 @@ ul {
 
 /* =========== WebStudio =========== */
 .header-logo__link {
-  padding: 16px 0px;
   display: block;
+  padding: 16px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -191,14 +191,12 @@ ul {
 @media screen and (min-width: 768px) {
   .header-logo__link {
     padding: 26px 0px;
-    margin-right: 88px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-logo__link {
     padding: 24px 0px 25px 0px;
-    margin-right: 93px;
   }
 }
 
@@ -212,24 +210,26 @@ ul {
 
 /* =========== Navigator=========== */
 .navigator {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
   .navigator {
-    display: block;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
+    margin-bottom: 302px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .navigator__link {
   position: relative;
   display: block;
-  padding: 32px 0px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -242,12 +242,15 @@ ul {
 
 @media screen and (max-width: 767px) {
   .navigator__link {
-    padding: 16px 0px;
-    margin-right: auto;
-    margin-left: 40px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigator__link {
+    padding: 32px 0px;
   }
 }
 
@@ -271,8 +274,16 @@ ul {
   }
 }
 
-.navigator__iteam:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .navigator__iteam:not(:last-child) {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .navigator__iteam:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /* =========== Contacts =========== */
