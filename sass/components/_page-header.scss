@@ -17,6 +17,8 @@
   display: flex;
   width: 100%;
 
+  max-height: 796px;
+
   padding: 48px 40px;
 
   background-color: $white-color;
@@ -179,6 +181,8 @@
   @media screen and (max-width: 767px) {
     display: block;
 
+    margin-bottom: 48px;
+
     background-color: $white-color;
   }
 }
@@ -187,7 +191,6 @@
   display: flex;
   align-items: center;
   padding: 32px 0px;
-  margin-left: 30px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -213,10 +216,16 @@
   @media screen and (max-width: 767px) {
     display: block;
     padding: 16px 0px;
-    margin-left: 40px;
 
     font-size: 34px;
     line-height: 1.17;
+
+    flex-direction: row-reverse;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 30px;
   }
 }
 
@@ -253,6 +262,16 @@
 
   color: $theme-color;
 
+  &:not(:last-child):after {
+    content: '';
+    // position: absolute;
+    // left: 0;
+    width: 22px;
+    height: 0px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
