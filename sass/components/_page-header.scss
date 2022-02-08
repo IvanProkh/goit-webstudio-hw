@@ -17,6 +17,11 @@
   display: flex;
   width: 100%;
 
+  width: 100vw;
+  height: 100hw;
+
+  justify-content: space-between;
+
   background-color: $white-color;
 
   @media screen and (max-width: 767px) {
@@ -178,8 +183,6 @@
   margin-left: auto;
 
   @media screen and (max-width: 767px) {
-    // display: block;
-
     flex-wrap: wrap-reverse;
 
     margin-bottom: 64px;
@@ -263,17 +266,23 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
 
-  color: $theme-color;
+  text-decoration: none;
+
+  // color: $theme-color;
 
   &:not(:last-child):after {
     content: '';
-    // position: absolute;
-    // left: 0;
-    width: 22px;
-    height: 0px;
+    width: 0px;
+    height: 22px;
+
+    margin-left: 10px;
+    margin-right: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+    // transform: rotate(90deg);
   }
   @media screen and (min-width: 768px) {
     display: none;

@@ -117,6 +117,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  width: 100vw;
+  height: 100hw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #ffffff;
 }
 
@@ -388,16 +393,21 @@ ul {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  text-decoration: none;
 }
 
 .social-list__item:not(:last-child):after {
   content: '';
-  width: 22px;
-  height: 0px;
+  width: 0px;
+  height: 22px;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 @media screen and (min-width: 768px) {
