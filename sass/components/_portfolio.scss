@@ -1,5 +1,26 @@
 .portfolio-main {
-  padding: 94px 0px;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 94px 0px;
+  }
+}
+
+.button-list {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    margin: -8px;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    padding-bottom: 50px;
+  }
 }
 
 .button-list__button {
@@ -20,24 +41,28 @@
   }
 }
 
-.button-list__item:not(:last-child) {
-  margin-right: 8px;
+.button-list__item {
+  @media screen and (max-width: 767px) {
+    margin: 0px 8px 15px;
+  }
 }
 
-.button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+.button-list__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
 }
+
+// section products \\
 
 .content-box {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .content-box__product {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
 
   cursor: pointer;
 
@@ -52,11 +77,8 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 }
 
@@ -87,6 +109,11 @@
 
 .content-box__img {
   display: block;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 .content-box__border {
