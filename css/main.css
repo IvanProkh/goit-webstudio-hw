@@ -570,14 +570,14 @@ ul {
   .group-features {
     display: block;
     margin: 0;
-    padding-bottom: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .group-features {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 0;
   }
 }
 
@@ -592,10 +592,17 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .group-features__element {
-    width: 100%;
-    max-width: 354px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .group-features__element {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
 
@@ -632,7 +639,7 @@ ul {
   display: flex;
   padding: 25px 100px;
   height: 120px;
-  width: 270px;
+  width: 100%;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -642,6 +649,22 @@ ul {
   .group-features__icon {
     width: 100%;
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .group-features__icon {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .group-features__icon {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -706,7 +729,7 @@ ul {
   background: #f5f4fa;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .masters-section {
     padding-top: 60px;
   }
@@ -720,7 +743,7 @@ ul {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .masters-title {
     margin-bottom: 30px;
   }
@@ -735,6 +758,13 @@ ul {
 @media screen and (max-width: 767px) {
   .masters-list {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .masters-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
