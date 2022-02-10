@@ -60,7 +60,7 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .padding-bottom {
     padding-bottom: 60px;
   }
@@ -299,7 +299,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -311,6 +310,20 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .contacts__iteam:first-child .contacts__contact {
     font-size: 24px;
@@ -319,15 +332,14 @@ ul {
   }
 }
 
-.contacts__contact {
+.contacts__iteam {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.contacts__contact {
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -353,10 +365,29 @@ ul {
 
 @media screen and (min-width: 768px) {
   .contacts__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 30px;
     padding: 32px 0px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -512,12 +543,12 @@ ul {
 
 /* =========== list-box =========== */
 .section-list {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .section-list {
-    padding-top: 60px;
+    padding-top: 94px;
   }
 }
 
@@ -543,6 +574,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .group-features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .group-features__element {
   margin: 15px;
 }
@@ -551,6 +589,13 @@ ul {
   .group-features__element {
     margin: 0;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .group-features__element {
+    width: 100%;
+    max-width: 354px;
   }
 }
 
