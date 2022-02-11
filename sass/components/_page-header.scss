@@ -17,10 +17,10 @@
   display: flex;
   width: 100%;
 
-  width: 100vw;
-  height: 100hw;
+  // width: 100vw;
+  // height: 100hw;
 
-  justify-content: space-between;
+  // justify-content: space-between;
 
   background-color: $white-color;
 
@@ -87,16 +87,19 @@
 
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
 
   @media screen and (min-width: 768px) {
     padding: 26px 0px;
     margin-right: 88px;
   }
+
   @media screen and (min-width: 1200px) {
     padding: 24px 0px 25px 0px;
     margin-right: 93px;
+
+    font-size: 26px;
   }
 }
 
@@ -181,6 +184,10 @@
 .contacts {
   display: flex;
 
+  // ВНИМАНИЕ
+
+  // при ширине 608пк ломаеться
+
   @media screen and (max-width: 767px) {
     flex-wrap: wrap-reverse;
 
@@ -189,9 +196,13 @@
     background-color: $white-color;
   }
 
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-    margin-left: 84px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    // display: block;
+
+    flex-direction: column;
+    justify-content: center;
+
+    margin: -5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -209,6 +220,10 @@
 
 .contacts__iteam {
   display: flex;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 5px;
+  }
 }
 
 .contacts__contact {
