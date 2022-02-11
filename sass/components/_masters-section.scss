@@ -82,12 +82,7 @@
 .master-icons {
   display: flex;
   align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
-
-  @media screen and (max-width: 767px) {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .master-icons__social-icon:not(:last-child) {

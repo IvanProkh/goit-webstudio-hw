@@ -197,12 +197,12 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // display: block;
-
     flex-direction: column;
     justify-content: center;
 
-    margin: -5px;
+    // margin: -5px;
+    margin-left: auto;
+    padding: 21px 0px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -216,13 +216,17 @@
     line-height: 1.16;
     margin-top: 32px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__iteam {
   display: flex;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin: 5px;
+    // margin: 5px;
   }
 }
 

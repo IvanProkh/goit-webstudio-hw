@@ -1,9 +1,9 @@
 .portfolio-main {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding: 60px 0px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     padding: 94px 0px;
   }
 }
@@ -19,7 +19,7 @@
   }
   @media screen and (min-width: 768px) {
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 
@@ -80,6 +80,12 @@
   @media screen and (max-width: 767px) {
     width: 100%;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .content-box__forward {
@@ -97,6 +103,13 @@
   background: rgba(33, 150, 243, 0.9);
 
   transition: transform $transition;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .content-box__wrapper {
@@ -112,7 +125,7 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    max-width: 450px;
+    // max-width: 450px;
   }
 }
 
