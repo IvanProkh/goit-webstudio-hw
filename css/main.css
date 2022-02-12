@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-  min-width: 480px;
+  min-width: 320px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -106,9 +106,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+}
+
+@media screen and (max-width: 479px) {
+  .header-border {
+    position: inherit;
+  }
 }
 
 /* =========== menu-burger =========== */
@@ -117,6 +120,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 767px;
   background-color: #ffffff;
 }
 
@@ -191,7 +195,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .header-logo__link {
-    padding: 26px 0px;
+    padding: 24px 0px 27px 0px;
     margin-right: 88px;
   }
 }
@@ -316,7 +320,6 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: auto;
-    padding: 21px 0px;
   }
 }
 
@@ -363,9 +366,15 @@ ul {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .contacts__contact {
-    display: block;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts__contact {
+    display: inline-block;
     font-size: 34px;
     line-height: 1.17;
   }
@@ -386,12 +395,6 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .contacts__contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: 30px;
     padding: 32px 0px;
     font-size: 14px;
@@ -779,12 +782,6 @@ ul {
 
 .masters-list__pfoto {
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .masters-list__pfoto {
-    max-width: 450px;
-  }
 }
 
 .masters-list__master {
