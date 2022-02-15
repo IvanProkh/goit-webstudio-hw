@@ -59,14 +59,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-
-  flex-grow: 1;
 }
 
 .content-box__product {
   margin: 15px;
-
-  flex-grow: 1;
 
   cursor: pointer;
 
@@ -94,7 +90,7 @@
 
 .content-box__product:first-child .content-box__border {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // height: 148px;
+    height: 148px;
   }
 }
 
