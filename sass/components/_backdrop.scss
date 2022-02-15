@@ -245,6 +245,10 @@
   background-color: $theme-color;
   border-radius: 2px;
 
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    top: 5px;
+  }
+
   @media screen and (min-width: 1200px) {
     top: 5px;
     left: 12px;

@@ -164,6 +164,20 @@
                 <h2 class="masters-title">Наша команда</h2>
                 <ul class="masters-list">
                     <li class="masters-list__master">
+                        <picture>
+                            <source srcset="
+                            ./images/img.jpg 1x, 
+                            ./images/img-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="
+                            ./images/tablet/tab-igor.jpg 1x,
+                            ./images/tablet/tab-igor-2x.jpg 2x" 
+                            media="(min-width:768px)">
+                            <source srcset="
+                            ./images/mobile/mob-igor.jpg 1x, 
+                            ./images/mobile/mob-igor-2x.jpg 2x" 
+                            media="(min-width:320px)">
+                        </picture>
                         <img class="masters-list__pfoto" src="images/masters/master-1.jpg" alt="Product Designer">
                         <h3 class="masters-list__name">Игорь Демьяненко</h3>
                         <p class="masters-list__profession">Product Designer</p>

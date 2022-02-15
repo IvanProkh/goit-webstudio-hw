@@ -91,7 +91,22 @@
             <ul class="products content-box">
                 <li class="content-box__product">
                     <div class="content-box__wrapper">
-                        <img class="content-box__img" src="images/portfolio/portfolio-1.jpg" alt="Технокряк">
+                        <img class="content-box__img" 
+                        srcset="
+                        ./images/portfolio/portfolio-1.jpg 1x, 
+                        ./images/portfolio/portfolio1-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        srcset="
+                        ./images/portfolio/portfolio-1.jpg 1x, 
+                        ./images/portfolio/portfolio1-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        srcset="
+                        ./images/portfolio/portfolio-1.jpg 1x, 
+                        ./images/portfolio/portfolio1-2x.jpg 2x"
+                        media="(min-width: 480px)"
+                        src="./images/portfolio/portfolio-1.jpg" 
+                        alt="Технокряк"
+                        >
                         <p class="content-box__forward">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.
                         </p>
@@ -286,6 +301,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

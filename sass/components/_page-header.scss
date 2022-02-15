@@ -18,9 +18,9 @@
 .menu-container {
   display: flex;
   width: 100%;
-  max-width: 767px;
 
   // width: 100vw;
+
   // height: 100hw;
 
   // justify-content: space-between;
@@ -187,10 +187,6 @@
 .contacts {
   display: flex;
 
-  // ВНИМАНИЕ
-
-  // при ширине 608пк ломаеться
-
   @media screen and (max-width: 767px) {
     flex-wrap: wrap-reverse;
 
@@ -202,8 +198,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     justify-content: center;
-
-    // margin: -5px;
     margin-left: auto;
   }
 
@@ -217,6 +211,8 @@
     font-size: 24px;
     line-height: 1.16;
     margin-top: 32px;
+
+    color: $text-secondary;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -226,10 +222,6 @@
 
 .contacts__iteam {
   display: flex;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // margin: 5px;
-  }
 }
 
 .contacts__contact {
@@ -251,6 +243,7 @@
 
   @media screen and (max-width: 479px) {
     font-size: 24px;
+    color: $theme-color;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -258,6 +251,8 @@
 
     font-size: 34px;
     line-height: 1.17;
+
+    color: $theme-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -301,14 +296,16 @@
 
 /* =========== social-list =========== */
 
+.social-list__item a {
+  color: $theme-color;
+}
+
 .social-list__item {
   display: inline-flex;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 
   color: $theme-color;
 
@@ -324,8 +321,8 @@
     flex-wrap: wrap;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
-    // transform: rotate(90deg);
   }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
