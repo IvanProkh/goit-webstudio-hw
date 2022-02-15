@@ -16,14 +16,12 @@
   background-position: center;
   align-items: center;
 
-  @media screen and (min-width: 320px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-      url(../images/hero/hero-bg-phone-1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+    url(../images/hero/hero-bg-phone-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-        url(../images/hero/hero-bg-phone-@2x);
-    }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+      url(../images/hero/hero-bg-phone-@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
