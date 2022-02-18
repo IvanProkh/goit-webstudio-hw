@@ -13,6 +13,12 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.is-open {
+  overflow: hidden;
+  visibility: hidden;
+  display: none;
+}
+
 a {
   transition: color $transition, background-color $transition;
 }
