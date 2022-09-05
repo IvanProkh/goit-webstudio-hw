@@ -23,14 +23,6 @@
   display: flex;
   width: 100%;
 
-  overflow-y: scroll;
-
-  // width: 100vw;
-
-  // height: 100hw;
-
-  // justify-content: space-between;
-
   background-color: $white-color;
 
   z-index: 1;
@@ -75,6 +67,7 @@
   position: fixed;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 
   z-index: 2;
   &:hover,
