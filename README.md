@@ -1,2 +1,3 @@
-# goit-markup-hw-08
+# goit-webstudio-hw
 Homework 8
+HTML + CSS
